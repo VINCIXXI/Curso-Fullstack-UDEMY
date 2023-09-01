@@ -1,0 +1,92 @@
+Y llegamos al final del Día 15, con muchas ganas de seguir programando, y en este caso, con el proyecto de hoy.
+
+La idea es continuar practicando este tema tan importante que es la comunicación con el servidor, utilizando las herramientas fetch y axios que hemos visto en profundidad a lo largo del día.
+
+Hoy vas a crear una sección del sitio web de una tienda de teléfonos. Vas a crear solamente la página que administra un registro de dispositivos móviles que se encuentra en un servidor. Tu sitio se va a comunicar con el servidor para realizar todas las operaciones CRUD necesarias (como consultar, modificar, agregar o eliminar elementos), entonces esta sección vendría a ser como un sector de nuestra tienda, que se puede llamar "Administración de productos".
+
+Para esto, vas a usar una API ficticia que he creado para ti, y que he colocado en un servidor, al que accederás a través de esta dirección:
+
+https://my-json-server.typicode.com/fedegaray/telefonos/db
+
+Este será el sitio donde encontrarás toda la información que debe mostrar tu página, y en el que "deberías" realizar todas las operaciones CRUD. Y digo "deberías" porque en realidad vamos a crear el código que haría todo eso, pero como por razones de seguridad esta API no permite modificaciones, vamos a hacer que nuestro sitio se comporte "como si" pudiéramos hacer esas modificaciones, pero en realidad la API original no se va a modificar. ¡Imagina el estado en que encontrarías esos datos al momento de hacer este ejercicio, si miles de estudiantes estuvieron jugando con ellos antes de que tu llegues!
+
+RECOMENDACIÓN:
+Lo primero que deberías hacer, antes de comenzar a diseñar tu sitio, es ingresar a esta API y observar cómo está estructurado su contenido (cómo está organizada la información) para poder diseñar tus solicitudes acorde a lo que contiene esta API.
+
+
+INSTRUCCIONES:
+Esta página deberá contar con 5 llamadas al servidor (API pública) para manipular la información allí almacenada. Cada elemento almacenado en la API contiene la siguiente estructura: 
+
+{
+  "id": [id],
+  "marca": [marca],
+  "modelo": [modelo],
+  "color": [color],
+  "almacenamiento": [almacenamiento],
+  "procesador":[procesador]
+},
+
+La consigna pura y dura de este ejercicio es que tu sitio realice las peticiones GET, POST, PUT y DELETE. Y para eso, deberá contener como mínimo las siguientes condiciones:
+
+1. Al iniciarse el sitio, es decir al cargarse en el navegador, se deberá obtener y mostrar todo el listado de elementos (de dispositivos) almacenados en la API y mostrarlos en nuestra página (por lo tanto deberías cargar esta función en el evento "onload" del <body> del HTML.
+
+Para poder mostrar esa información, vamos a utilizar una nueva etiqueta HTML que no hemos visto hasta ahora, pero que es un buen momento para aprender. Se trata de la etiqueta <table> y nos permite crear una tabla como esta:
+
+
+ ________________________________________________________________________
+|  ID  |  Nombre  |  Modelo  |  Color  |  Almacenamiento  |  Procesador  |
+ ------------------------------------------------------------------------
+|      |          |          |         |                  |              |
+ ------------------------------------------------------------------------
+
+
+Esta tabla contiene un encabezado y un cuerpo para mostrar toda la información, que en este caso va a ser el objeto JSON que obtenemos al realizar la petición, con el listado de todos los dispositivos. En el cuestionario paso a paso de esta sección encontrarás una explicación detallada de cómo crear tu tabla, pero básicamente su estructura será esta:
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Modelo</th>
+      <th>Color</th>
+      <th>Almacenamiento</th>
+      <th>Procesador</th>
+    </tr>
+  </thead>    
+  <tbody id="tblContenido">
+  </tbody>
+</table>
+
+Como puedes ver, se trata de una etiqueta <table> para incrustar el objeto tabla, y dentro de ella dos etiquetas generales: <thead> para el encabezado de la tabla, y <tbody> para el cuerpo de la tabla.
+
+En las tablas (que como sabes están compuestas por filas y columnas), defines las filas con una etiqueta <tr> (por Table Row, o "Fila de Tabla"). Para el caso de las celdas, depende de dónde estén ubicadas. En el encabezado, cada celda de la fila se va a definir como <th>, y dentro de cada una de ella ponemos todos los títulos que van a tener sus columnas. Dentro del <tbody> (o cuerpo de tabla), también puedes agregar tantas <tr> (Table Row) como quieras, y cada celda de las filas del cuerpo se etiquetan como <td>.
+
+Pero en nuestro caso en particular, al desarrollar nuestra tabla en el documento HTML vamos a dejar vacío el cuerpo de la tabla (asignándole un ID por supuesto), para completarlo luego dinámicamente desde JavaScript con la información que se va actualizando a medida que haces operaciones CRUD en los datos de origen.
+
+2. Tu sitio debe poder realizar consultas GET de cada dispositivo, para lo cual a la petición HTTP le debemos proporcionar el ID del elemento que queremos consultar. Para obtener este dato de manera individual, nuestra página deberá contar en algún lugar con un elemento <input> donde el usuario va a ingresar el ID del dispositivo que desea consultar y un botón que va a llamar a la función encargada de esa petición. La respuesta con la información del dispositivo, se deberá mostrar en pantalla distribuida en una serie de etiquetas <textarea>, que es un elemento HTML que no solo permite mostrar texto (como un párrafo <p>), sino también que también el usuario lo pueda editar.
+
+3. El usuario debe poder hacer peticiones de tipo POST, para que pueda agregar un nuevo registro a la API. Entonces el sitio debe tener un sector con 5 elementos <input> para que el usuario ingrese las características del nuevo dispositivo, y un botón que llame a una función encargada de la petición, que tome la información que ha ingresado el usuario, para construir un objeto JSON y agregarlo a la API. Debido a que nuestra API en realidad no permite esto, por razones de seguridad, construirás toda la petición como corresponde, pero lo único que verá el usuario es un "alert()" que "confirma" que el dispositivo se ha agregado.
+
+4. Tu sitio permitirá al usuario modificar un elemento existente a través de peticiones PUT. Para eso tu sitio puede aprovechar los datos que se muestran en pantalla cuando el usuario hace una consulta de un registro individual, para permitir que el usuario pueda modificar los valores del objeto, y a través de un botón aparte pueda llamar a una función que tome esa información y reemplace la que hay en un determinado registro. Ten en cuenta que, nuevamente, en este caso solo estaremos fingiendo que nuestra petición modifica un registro, por lo que incluiremos un "alert()" para mostrarle al usuario que la operación se ha realizado con éxito.
+
+5. También utilizando la información que se muestra cuando hacemos una consulta individual, tu sitio va a tener un botón "Eliminar" para que pueda realizar una petición de tipo DELETE, que capture el ID que ha elegido el usuario y lo borre de la API. Esto también va a ser una simulación, por lo que la respuesta solo va a mostrar un "alert()" de supuesta confirmación en pantalla.
+
+---------------------------------
+
+Eso es todo, que no es poco. 
+
+Ten en cuenta que a todas estas peticiones, las puedes realizar con cualquiera de las herramientas vistas (tanto fetch como axios). Es tu elección si prefieres una por sobre la otra, o si quieres utilizar ambas.
+
+Un detalle que puede serte de gran ayuda. Para realizar las peticiones GET y POST, debes usar la url tal como te la compartí al comienzo:
+
+https://my-json-server.typicode.com/fedegaray/telefonos/db
+
+Pero para las peticiones que apuntan a un registro individual (como PUT, DELETE y las peticiones GET individuales), debes agregar a la url de base, el ID del registro en cuestión, de la siguiente manera:
+
+https://my-json-server.typicode.com/fedegaray/telefonos/db/[id]
+
+Sé que el de hoy es un proyecto exigente, pero también sé que estamos en el día 15, que has transitado un largo camino, y que tienes lo que hay que tener para pasarte horas enteras enfrentando los problemas que deberás superar en este desafío.
+
+Por favor aprovecha el cuestionario paso a paso, como siempre, y hoy más que nunca. No te vas a arrepentir. Mi solución está lista luego de eso, y de seguro vas a querer echarle un vistazo.
+
+No te demoro más. Mucha suerte.

@@ -35,3 +35,7 @@ app.post("/clientes/create", (pedido, respuesta) => {
 app.listen(3000, () => {
     console.log("El servidor está en linea")
 })
+
+/*App para probar las API sin estar en la web 
+https://www.postman.com/downloads/
+*/

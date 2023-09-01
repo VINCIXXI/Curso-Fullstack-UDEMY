@@ -1,0 +1,27 @@
+Finalmente llegamos al proyecto del Día 14. Hoy fue un día complejo, donde abordamos demasiados elementos, que quizás a primera vista no tengan una relación directa entre sí. Por esta razón, para el día de hoy fue muy difícil proponer un proyecto que incluya todo lo que hemos visto hoy (o mejor dicho, si lo hacía iba a terminar siendo un proyecto para hacer en una semana), entonces decidí enfocar este proyecto en dos de las herramientas más demandadas de hoy: React y Heroku.
+
+Entonces, el proyecto de hoy consiste en programar una aplicación web que consiste en un juego desarrollado con React, y desplegado en la nube con Heroku. Vas a programar un juego que consiste en adivinar el número que ha pensado la máquina. La idea es que el jugador ingrese un número del 1 al 10, y que por detrás nuestra aplicación genere un número aleatorio entre ese rango y lo compare con la "apuesta" del jugador. Si el jugador acierta, gana. Y sino, ha fallado, y vuelve a jugar otra vez, pero en cada intento que haga el jugador, nuestro juego va a generar un nuevo número.
+
+Como consigna, tu aplicación debe estar compuesta por al menos dos componentes: uno para el título o encabezado del juego, y otro para el funcionamiento del juego propiamente dicho. 
+
+El componente título, deberá contar en su código HTML con una etiqueta h1, una imagen y todo lo que tú creas necesario para encabezar la aplicación. Me encantaría que te pongas creativo y agregues aquí todo lo que quieras.
+
+El otro componente, que va a contener el funcionamiento del juego, va a ser mas complejo. Por un lado debe contar con un input para que el usuario ingrese su apuesta, y un botón para confirmas su apuesta e iniciar la comparación entre ambos números. Pero en la codificación de este componente, además deberá contener dos hooks que van a hacer posible el funcionamiento del juego.
+
+El primer hook, hará referencia a la entrada del usuario en el campo input. Inicialmente lo pondremos en cero y con su correspondiente función de actualización modificaremos el valor actual según lo que el jugador ingrese. Para eso utilizaremos el evento onChange del input.
+
+El segundo hook, va ser quien contenga el valor aleatorio generado por la máquina. Para inicializarlo, generaremos un número aleatorio entre un rango de valores (tal cual como hemos visto con la función random allá por el día 4 del curso). El límite inferior será 1 y el mayor estará dado por una propiedad (props) que el componente va a recibir cuando se lo llame. 
+
+Por último, mediante el evento onClick del botón vamos a realizar la comprobación de la respuesta. Vamos a llamar a una función, que va a comparar la variable del primer hook (el ingreso del jugador) con la variable del segundo hook (el número aleatorio) y mostrara en un alert si hubo coincidencia o no.
+
+Luego de esto, no olvides de llamar a la función de actualización del segundo hook para generar un nuevo número aleatorio.
+
+Cuando tus componentes estén listos, en tu archivo App.js deberás importar y llamar a cada uno de ellos. Recuerda que el segundo componente tiene que recibir una propiedad con el límite superior del número aleatorio, que dijimos que va a ser 10.
+
+Cuando hayas terminado con el juego y compruebes que se ve y funciona como esperabas, lo vas a subir a la nube usando Heroku para que todo el mundo pueda jugar! Y te propongo algo más: si me pasas la url de tu juego por mensaje privado (por favor no en el área de preguntas y respuestas que eso es para otra cosa), voy a poner la lista de todos los juegos creados por los estudiantes al final de esta sección. Así que hazlo bien bonito y agrégale todas las funcionalidades o componentes extra que se te ocurran, para que tus compañeros admires tu trabajo y se inspiren en tu creatividad.
+
+Este proyecto se puede complicar, así que no dejes de abrir el cuestionario que viene a continuación con la guía paso a paso. Es muy importante que no te abrumes con todo lo nuevo que trae react para generar una nueva aplicación y las funcionalidades que no habías visto antes, por lo que seguir esta guía te va a ayudar a seguir el mejor camino posible. Mantenlo abierto a lo largo de todo tu desarrollo y te prometo que así llegarás a buen puerto.
+
+Después de eso verás mi solución, lo cual siempre sirve para aprender un poquito más, y para despejar dudas que puedan generarse en el camino.
+
+Sonríe, que estás por programar.
