@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <title>Proyecto final dia 3</title>
+    </head>
+    <body onload="comenzarTiempo()">
+        <h2>Responde las preguntas antes que acabe el tiempo</h2>
+        <h1><span id="Conteo">time</span></h1>
+        <p>1. ¿Cual es tu nombre?</p>
+        <input type="text" id="nombre">
+
+        <p>2. ¿Cuantos años tienes?</p>
+        <input type="number" id="edad">
+
+        <p>3. ¿En que pais vives?</p>
+        <input type="text" id="lugar">
+
+        <p>4. ¿Eres hombre o mujer?</p>
+        <input type="text" id="genero">
+
+        <p>5. ¿Cuantos hermanos tienes?</p>
+        <input type="text" id="familia">
+
+        <audio id="audioAlarma">
+            <source src="gameover.mp3" type="audio/mpeg">
+            sonido no habilitado
+        </audio>
+        <div>
+            <button onclick="Finalizado()">Terminé</button>
+        </div>
+        <div>
+            <button onclick="VolverAIntentar()">Volver a Intentar</button>
+        </div>
+        <script>
+            let TiempoAcabado;
+            let Descenso;
+            function comenzarTiempo(){
+                TiempoAcabado=setTimeout(tiempoCumplido, 30000);
+                Descenso=setInterval(ticTac, 1000)
+                document.getElementById("Conteo").textContent=30;
+            }
+
+            function tiempoCumplido(){
+                alert ("Game Over");
+                clearInterval(Descenso);
+                document.getElementById("comenzarTiempo").textContent = 0;
+                document.getElementById("audioAlarma").play();
+                
+            } 
+            function ticTac(){
+                let tiempo =document.getElementById("Conteo").textContent;
+                document.getElementById("Conteo").textContent=tiempo-1;
+            }
+            function Finalizado(){
+                clearTimeout(TiempoAcabado);                             
+                clearInterval(Descenso);
+
+                let fecha=new Date();
+                let nombre=document.getElementById("nombre").value;
+                let edad=document.getElementById("edad").value;
+                let lugar=document.getElementById("lugar").value;
+                let genero=document.getElementById("genero").value;
+                let familia=document.getElementById("familia").value;
+                let mensaje = fecha.toLocaleDateString("es-Es") + "\n" +
+                                "1. " + nombre + "\n" +
+                                "2. " + edad + "\n" +
+                                "3. " + lugar + "\n" +
+                                "4. " + genero + "\n" +
+                                "5. " + familia;
+                alert(mensaje);
+            }
+            function VolverAIntentar(){
+                location.reload();
+            }
+        </script>
+    </body>
+</html>
