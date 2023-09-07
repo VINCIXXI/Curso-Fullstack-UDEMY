@@ -1,0 +1,7 @@
+@import 'base/variables'; // esta es la forma vieja
+@import 'contenido/contenido';
+
+//la nueva forma requiere que tengas un _index.scss en cada carpeta
+//se usa @use/base aca en la nueva forma
+
+

@@ -1,0 +1,30 @@
+{
+  "name": "festivalmusica_inicio",
+  "version": "1.0.0",
+  "description": "proyecto con GUlp, SASS y HTML",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "tarea": "gulp tarea",
+    "css": "gulp css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VINCIXXI/Curso-Fullstack-UDEMY.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "David Alejandro Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VINCIXXI/Curso-Fullstack-UDEMY/issues"
+  },
+  "homepage": "https://github.com/VINCIXXI/Curso-Fullstack-UDEMY#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.66.1"
+  }
+}
