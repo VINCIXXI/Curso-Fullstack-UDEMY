@@ -1,0 +1,184 @@
+/*Estilos generales*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif,Arial, Helvetica;
+    text-decoration: none;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+/*Estilos cabecera*/
+header{
+    width: 120rem;
+    height: 14rem;
+    background-color: #23282b;
+    margin: 0px auto;   
+}
+
+#logotipo{
+    width: 35%;
+    height: 130px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+#logotipo img{
+    display: block;
+    float: left;
+    width: 60px;
+    margin-top: 20px;
+}
+
+#logotipo h1{
+    display: block;
+    float: left;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: #2ba977;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+/*Estilos barra nav*/
+nav{
+    width: 1250px;
+    height: 40px;
+    background-color: #1B1E1F;
+    border: 1px solid #333333;
+    margin: 0 auto;
+    box-shadow: 0px 22px 22px gray;
+    font-size: 13px;
+}
+
+nav ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li{
+    line-height: 40px;
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(215, 215, 215);
+}
+
+nav ul li a:hover{
+    background-color:#2ba977;
+    box-shadow: 0px 0px 5px #333333 inset;
+    color:white;
+    transition: all 200ms;
+}
+
+.barra{
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.esquina-izquierda{
+    display: block;
+    border-left: 20px solid transparent;
+    border-top: 10px solid #2b2f30;
+    float: left;
+}
+
+.esquina-derecha{
+    display: block;
+    border-right: 20px solid transparent;
+    border-top: 10px solid #2b2f30;
+    float: right;
+}
+
+/*
+.relleno-barra{
+    display:block;
+    width: 1210px;
+    height: 10px;
+    background: #2b2f30;
+    float: left;
+}*/
+
+/*Estilos contenido central*/
+#content{
+    width: 1210px;
+    min-height: 930px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.box{
+    background: white;
+    width: 95%;
+    min-height: 935px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.box form{
+    width: 40%;
+}
+.box form input,
+.box form label{
+    display: block;
+    padding: 5px;
+    padding-left: 0px;
+}
+.box form input[type="text"], 
+.box form textarea,
+.box form select{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.box form select{
+    width: 50%;
+}
+.box form input[type="submit"],
+.box form input[type="button"],
+.box form button{
+    padding: 10px;
+    margin-top: 5px;
+    background: #2ba977;
+    color: white;
+    border: 1px solid #444;
+    transition: 200ms all;
+}
+.box form input[type="submit"]:hover,
+.box form input[type="button"]:hover,
+.box form button:hover{
+    cursor: pointer;
+    background: #207d58;
+}
+
+.title{
+    color: #444;
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+footer{
+    width: 1250px;
+    background-color: #1b1e1f;
+    border: 1px solid #333;
+    color: #d1d4d6;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 20px gray;
+}
+
+.rojo{
+    color: red;
+}

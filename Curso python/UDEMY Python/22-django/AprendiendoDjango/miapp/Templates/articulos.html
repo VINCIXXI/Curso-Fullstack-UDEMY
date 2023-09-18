@@ -1,0 +1,24 @@
+{% extends 'layout.html' %} <!--para heredar-->
+
+{%block title%} Pagina de pruebas {%endblock%}
+
+{% block content %}
+<h1 class="title">articulos</h1>
+<p>{{"Todos"}}</p> 
+{% comment %}El cut es un filtro, y se usan con el | {% endcomment %}
+
+    <ul>
+        {%for articulo in articulos%}
+            <li>
+                <h4>{{articulo.id}}.{{articulo.title}}</h4>
+                <p>
+                    {{articulo.content}}
+                    <br>
+                    <a href="{%url "borrar" id=articulo.id%}">Eliminar</a>
+                </p>
+                <br>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

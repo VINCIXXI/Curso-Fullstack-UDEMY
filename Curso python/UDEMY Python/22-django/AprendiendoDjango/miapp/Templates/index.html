@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{%block title%} Inicio {%endblock%}
+
+{% block content %}
+
+{% include "fecha-actual.html" %}
+<!--Esto es un comnetario que se ve en el inspector-->
+
+{% comment "Esto es un comentario" %}
+    Todo lo que esta aqui esta comentado
+    <h1>Esto tambien</h1>
+{% endcomment %}
+
+<h1 class="title">{{title}}</h1>
+
+<p>{{mi_variable}}</p>{% comment %}
+las dobles llaves son variables definidas
+{% endcomment %}
+
+{%if nombre%}
+    <p>{{nombre}}</p>
+{% else %}
+    <strong>El nombre no existe</strong>
+{% endif %}
+
+<h3>Listado de lenguajes: </h3>
+<ul>
+    {%for lenguaje in lenguajes%}
+        <li>{{lenguaje}}</li>
+    {%empty%}
+        <strong>No hay lenguajes que mostrar</strong>
+    {% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,71 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+         <!--titulo de cada pagina-->
+        {% block title %}
+
+        {% endblock %}
+        | David Rodriguez</title>
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+</head>
+<body>
+    <!--Cabecera de la pagina-->
+    <header>
+        <div id="logotipo">
+            <!--logo-->
+            <img src="{%static 'img/logo.png'%}"/>
+            <h1>Sitio web con Django</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="{%url 'index'%}">Inicio</a>
+            </li>
+            <li>
+                <a href="/hola-mundo">Hola Mundo</a>
+            </li>
+            <li>
+                <a href="{%url 'articulos'%}">Articulos</a>
+            </li>
+            <li>
+                <a href="{%url 'create'%}">Crear articulos</a>
+            </li>
+            <li>
+                <a href="{%url 'create_full'%}">Crear articulo full</a>
+            </li>
+            <li>
+                <a href="/pagina-pruebas">Pagina de Pruebas</a>
+            </li>
+            <li>
+                <a href="/contacto">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="barra">
+        <span class="esquina-izquierda"></span>
+        <span class="relleno-barra"></span>
+        <span class="esquina-derecha"></span>
+    </div>
+
+    <div id="content">
+        <div class="box">
+        <!--Codigo que viene de templates-->
+        {% block content %}
+        <p>esto es del contenido principal</p>
+        {% endblock %}
+        </div>
+    </div>
+
+    <footer>
+        Master en python con David Rodriguez - {% now "Y-m-d" %}
+    </footer>
+</body>
+</html>

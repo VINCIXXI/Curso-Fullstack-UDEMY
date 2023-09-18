@@ -1,0 +1,11 @@
+{% extends 'layout.html' %} <!--para heredar-->
+
+{%block title%} Pagina de pruebas {%endblock%}
+
+{% block content %}
+<h1 class="title">Pagina de mi web</h1>
+<p>{{"Creado por DR"|cut:" "}}</p> 
+{% comment %}El cut es un filtro, y se usan con el | {% endcomment %}
+
+
+{% endblock %}
