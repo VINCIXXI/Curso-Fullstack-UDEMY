@@ -348,3 +348,94 @@ PHP Warning:  PHP Startup: Unable to load dynamic library 'fileinfo' (tried: C:\
 PHP Warning:  PHP Startup: Unable to load dynamic library 'gd' (tried: C:\\php\\ext\\gd (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_gd.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
 PHP Warning:  PHP Startup: Unable to load dynamic library 'mysqli' (tried: C:\\php\\ext\\mysqli (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_mysqli.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
 [Sun Sep 17 11:00:10.735916 2023] [mpm_winnt:notice] [pid 7640:tid 404] AH00354: Child: Starting 64 worker threads.
+[Mon Sep 18 19:37:49.213909 2023] [mpm_winnt:notice] [pid 4932:tid 128] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Sep 18 19:37:51.241497 2023] [mpm_winnt:notice] [pid 7640:tid 404] AH00364: Child: All worker threads have exited.
+[Mon Sep 18 19:37:51.257122 2023] [mpm_winnt:notice] [pid 4932:tid 128] AH00430: Parent: Child process 7640 exited successfully.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'fileinfo' (tried: C:\\php\\ext\\fileinfo (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_fileinfo.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'gd' (tried: C:\\php\\ext\\gd (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_gd.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'mysqli' (tried: C:\\php\\ext\\mysqli (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_mysqli.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Mon Sep 18 19:38:06.753590 2023] [mpm_winnt:notice] [pid 4256:tid 280] AH00455: Apache/2.4.57 (Win64) PHP/8.2.10 configured -- resuming normal operations
+[Mon Sep 18 19:38:06.753590 2023] [mpm_winnt:notice] [pid 4256:tid 280] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Mon Sep 18 19:38:06.753590 2023] [core:notice] [pid 4256:tid 280] AH00094: Command line: 'D:\\Ricardo\\Downloads\\Curso UDEMY\\apache\\bin\\httpd.exe -d D:/Ricardo/Downloads/Curso UDEMY/apache'
+[Mon Sep 18 19:38:06.755588 2023] [mpm_winnt:notice] [pid 4256:tid 280] AH00418: Parent: Created child process 6592
+PHP Warning:  PHP Startup: Unable to load dynamic library 'fileinfo' (tried: C:\\php\\ext\\fileinfo (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_fileinfo.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'gd' (tried: C:\\php\\ext\\gd (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_gd.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'mysqli' (tried: C:\\php\\ext\\mysqli (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_mysqli.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Mon Sep 18 19:38:07.840017 2023] [mpm_winnt:notice] [pid 6592:tid 428] AH00354: Child: Starting 64 worker threads.
+[Tue Sep 19 09:37:18.847351 2023] [core:warn] [pid 4240:tid 376] AH00098: pid file D:/Ricardo/Downloads/Curso UDEMY/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+PHP Warning:  PHP Startup: Unable to load dynamic library 'fileinfo' (tried: C:\\php\\ext\\fileinfo (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_fileinfo.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'gd' (tried: C:\\php\\ext\\gd (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_gd.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'mysqli' (tried: C:\\php\\ext\\mysqli (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_mysqli.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Tue Sep 19 09:37:19.017890 2023] [mpm_winnt:notice] [pid 4240:tid 376] AH00455: Apache/2.4.57 (Win64) PHP/8.2.10 configured -- resuming normal operations
+[Tue Sep 19 09:37:19.017890 2023] [mpm_winnt:notice] [pid 4240:tid 376] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Tue Sep 19 09:37:19.017890 2023] [core:notice] [pid 4240:tid 376] AH00094: Command line: 'D:\\Ricardo\\Downloads\\Curso UDEMY\\apache\\bin\\httpd.exe -d D:/Ricardo/Downloads/Curso UDEMY/apache'
+[Tue Sep 19 09:37:19.017890 2023] [mpm_winnt:notice] [pid 4240:tid 376] AH00418: Parent: Created child process 5420
+PHP Warning:  PHP Startup: Unable to load dynamic library 'fileinfo' (tried: C:\\php\\ext\\fileinfo (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_fileinfo.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'gd' (tried: C:\\php\\ext\\gd (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_gd.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'mysqli' (tried: C:\\php\\ext\\mysqli (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_mysqli.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Tue Sep 19 09:37:20.541500 2023] [mpm_winnt:notice] [pid 5420:tid 408] AH00354: Child: Starting 64 worker threads.
+[Tue Sep 19 09:40:47.456159 2023] [core:warn] [pid 4204:tid 376] AH00098: pid file D:/Ricardo/Downloads/Curso UDEMY/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+PHP Warning:  PHP Startup: Unable to load dynamic library 'fileinfo' (tried: C:\\php\\ext\\fileinfo (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_fileinfo.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'gd' (tried: C:\\php\\ext\\gd (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_gd.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'mysqli' (tried: C:\\php\\ext\\mysqli (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_mysqli.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Tue Sep 19 09:40:47.661177 2023] [mpm_winnt:notice] [pid 4204:tid 376] AH00455: Apache/2.4.57 (Win64) PHP/8.2.10 configured -- resuming normal operations
+[Tue Sep 19 09:40:47.661177 2023] [mpm_winnt:notice] [pid 4204:tid 376] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Tue Sep 19 09:40:47.661177 2023] [core:notice] [pid 4204:tid 376] AH00094: Command line: 'D:\\Ricardo\\Downloads\\Curso UDEMY\\apache\\bin\\httpd.exe -d D:/Ricardo/Downloads/Curso UDEMY/apache'
+[Tue Sep 19 09:40:47.661177 2023] [mpm_winnt:notice] [pid 4204:tid 376] AH00418: Parent: Created child process 6184
+PHP Warning:  PHP Startup: Unable to load dynamic library 'fileinfo' (tried: C:\\php\\ext\\fileinfo (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_fileinfo.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'gd' (tried: C:\\php\\ext\\gd (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_gd.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'mysqli' (tried: C:\\php\\ext\\mysqli (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_mysqli.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Tue Sep 19 09:40:48.578527 2023] [mpm_winnt:notice] [pid 6184:tid 412] AH00354: Child: Starting 64 worker threads.
+[Tue Sep 19 23:12:52.183581 2023] [core:warn] [pid 4084:tid 376] AH00098: pid file D:/Ricardo/Downloads/Curso UDEMY/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+PHP Warning:  PHP Startup: Unable to load dynamic library 'fileinfo' (tried: C:\\php\\ext\\fileinfo (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_fileinfo.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'gd' (tried: C:\\php\\ext\\gd (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_gd.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'mysqli' (tried: C:\\php\\ext\\mysqli (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_mysqli.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Tue Sep 19 23:12:52.708280 2023] [mpm_winnt:notice] [pid 4084:tid 376] AH00455: Apache/2.4.57 (Win64) PHP/8.2.10 configured -- resuming normal operations
+[Tue Sep 19 23:12:52.708280 2023] [mpm_winnt:notice] [pid 4084:tid 376] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Tue Sep 19 23:12:52.708280 2023] [core:notice] [pid 4084:tid 376] AH00094: Command line: 'D:\\Ricardo\\Downloads\\Curso UDEMY\\apache\\bin\\httpd.exe -d D:/Ricardo/Downloads/Curso UDEMY/apache'
+[Tue Sep 19 23:12:52.714275 2023] [mpm_winnt:notice] [pid 4084:tid 376] AH00418: Parent: Created child process 6724
+PHP Warning:  PHP Startup: Unable to load dynamic library 'fileinfo' (tried: C:\\php\\ext\\fileinfo (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_fileinfo.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'gd' (tried: C:\\php\\ext\\gd (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_gd.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'mysqli' (tried: C:\\php\\ext\\mysqli (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_mysqli.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Tue Sep 19 23:12:55.928427 2023] [mpm_winnt:notice] [pid 6724:tid 392] AH00354: Child: Starting 64 worker threads.
+[Wed Sep 20 11:09:24.844085 2023] [core:warn] [pid 4208:tid 376] AH00098: pid file D:/Ricardo/Downloads/Curso UDEMY/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+PHP Warning:  PHP Startup: Unable to load dynamic library 'fileinfo' (tried: C:\\php\\ext\\fileinfo (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_fileinfo.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'gd' (tried: C:\\php\\ext\\gd (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_gd.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'mysqli' (tried: C:\\php\\ext\\mysqli (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_mysqli.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Wed Sep 20 11:09:25.241856 2023] [mpm_winnt:notice] [pid 4208:tid 376] AH00455: Apache/2.4.57 (Win64) PHP/8.2.10 configured -- resuming normal operations
+[Wed Sep 20 11:09:25.241856 2023] [mpm_winnt:notice] [pid 4208:tid 376] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Wed Sep 20 11:09:25.241856 2023] [core:notice] [pid 4208:tid 376] AH00094: Command line: 'D:\\Ricardo\\Downloads\\Curso UDEMY\\apache\\bin\\httpd.exe -d D:/Ricardo/Downloads/Curso UDEMY/apache'
+[Wed Sep 20 11:09:25.244854 2023] [mpm_winnt:notice] [pid 4208:tid 376] AH00418: Parent: Created child process 6252
+PHP Warning:  PHP Startup: Unable to load dynamic library 'fileinfo' (tried: C:\\php\\ext\\fileinfo (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_fileinfo.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'gd' (tried: C:\\php\\ext\\gd (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_gd.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'mysqli' (tried: C:\\php\\ext\\mysqli (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_mysqli.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Wed Sep 20 11:09:28.758833 2023] [mpm_winnt:notice] [pid 6252:tid 396] AH00354: Child: Starting 64 worker threads.
+[Wed Sep 20 11:11:19.006911 2023] [core:warn] [pid 3800:tid 152] AH00098: pid file D:/Ricardo/Downloads/Curso UDEMY/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+PHP Warning:  PHP Startup: Unable to load dynamic library 'fileinfo' (tried: C:\\php\\ext\\fileinfo (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_fileinfo.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'gd' (tried: C:\\php\\ext\\gd (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_gd.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'mysqli' (tried: C:\\php\\ext\\mysqli (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_mysqli.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Wed Sep 20 11:11:19.224785 2023] [mpm_winnt:notice] [pid 3800:tid 152] AH00455: Apache/2.4.57 (Win64) PHP/8.2.10 configured -- resuming normal operations
+[Wed Sep 20 11:11:19.224785 2023] [mpm_winnt:notice] [pid 3800:tid 152] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Wed Sep 20 11:11:19.224785 2023] [core:notice] [pid 3800:tid 152] AH00094: Command line: 'D:\\Ricardo\\Downloads\\Curso UDEMY\\apache\\bin\\httpd.exe -d D:/Ricardo/Downloads/Curso UDEMY/apache'
+[Wed Sep 20 11:11:19.226786 2023] [mpm_winnt:notice] [pid 3800:tid 152] AH00418: Parent: Created child process 6160
+PHP Warning:  PHP Startup: Unable to load dynamic library 'fileinfo' (tried: C:\\php\\ext\\fileinfo (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_fileinfo.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'gd' (tried: C:\\php\\ext\\gd (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_gd.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'mysqli' (tried: C:\\php\\ext\\mysqli (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_mysqli.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Wed Sep 20 11:11:20.035960 2023] [mpm_winnt:notice] [pid 6160:tid 392] AH00354: Child: Starting 64 worker threads.
+[Wed Sep 20 15:07:24.651549 2023] [mpm_winnt:notice] [pid 3800:tid 152] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Sep 20 15:07:26.669856 2023] [mpm_winnt:notice] [pid 6160:tid 392] AH00364: Child: All worker threads have exited.
+[Wed Sep 20 15:07:26.700496 2023] [mpm_winnt:notice] [pid 3800:tid 152] AH00430: Parent: Child process 6160 exited successfully.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'fileinfo' (tried: C:\\php\\ext\\fileinfo (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_fileinfo.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'gd' (tried: C:\\php\\ext\\gd (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_gd.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'mysqli' (tried: C:\\php\\ext\\mysqli (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_mysqli.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Wed Sep 20 15:07:28.046907 2023] [mpm_winnt:notice] [pid 18144:tid 428] AH00455: Apache/2.4.57 (Win64) PHP/8.2.10 configured -- resuming normal operations
+[Wed Sep 20 15:07:28.046907 2023] [mpm_winnt:notice] [pid 18144:tid 428] AH00456: Apache Lounge VS17 Server built: Aug  2 2023 17:28:16
+[Wed Sep 20 15:07:28.046907 2023] [core:notice] [pid 18144:tid 428] AH00094: Command line: 'D:\\Ricardo\\Downloads\\Curso UDEMY\\apache\\bin\\httpd.exe -d D:/Ricardo/Downloads/Curso UDEMY/apache'
+[Wed Sep 20 15:07:28.050911 2023] [mpm_winnt:notice] [pid 18144:tid 428] AH00418: Parent: Created child process 18040
+PHP Warning:  PHP Startup: Unable to load dynamic library 'fileinfo' (tried: C:\\php\\ext\\fileinfo (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_fileinfo.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'gd' (tried: C:\\php\\ext\\gd (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_gd.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'mysqli' (tried: C:\\php\\ext\\mysqli (No se puede encontrar el m\xc3\xb3dulo especificado), C:\\php\\ext\\php_mysqli.dll (No se puede encontrar el m\xc3\xb3dulo especificado)) in Unknown on line 0
+[Wed Sep 20 15:07:28.394365 2023] [mpm_winnt:notice] [pid 18040:tid 444] AH00354: Child: Starting 64 worker threads.
+[Wed Sep 20 15:07:59.529851 2023] [mpm_winnt:notice] [pid 18144:tid 428] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Sep 20 15:08:01.544921 2023] [mpm_winnt:notice] [pid 18040:tid 444] AH00364: Child: All worker threads have exited.
+[Wed Sep 20 15:08:01.572624 2023] [mpm_winnt:notice] [pid 18144:tid 428] AH00430: Parent: Child process 18040 exited successfully.

@@ -2,6 +2,7 @@ from django.shortcuts import render, HttpResponse, redirect
 from miapp.models import Article, Category
 from django.db.models import Q
 from miapp.forms import FormArticle
+from django.contrib import messages #para importar los mensajes flash
 
 # Create your views here.
 
@@ -136,6 +137,9 @@ def create_full_article(request):
             public=public
             )
             articulo.save()
+
+            #crea mensaje flash: sesion que se muestra por una actualizacion de pantalla
+            messages.success(request,f"Has creado correctamente el articulo {articulo.id}")
 
             return redirect("articulos")
             # return HttpResponse(articulo.title+" -"+articulo.content+" -"+str(articulo.public))

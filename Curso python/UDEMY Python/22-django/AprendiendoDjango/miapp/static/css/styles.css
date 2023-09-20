@@ -182,3 +182,55 @@ footer{
 .rojo{
     color: red;
 }
+
+.message{
+    padding: 20px;
+    background: #1f7e58;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.article-item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid #eee;
+    padding: 15px;
+    clear: both;
+}
+
+.article-item .image{
+    width: 200px;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+}
+
+.article-item .image img{
+    height: 200px;
+}
+
+.article-item .data{
+    float: left;
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.article-item h2{
+    display: block;
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.article-item span.date{
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 10px; 
+    display: block;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}

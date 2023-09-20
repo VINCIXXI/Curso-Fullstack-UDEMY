@@ -1,0 +1,82 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+         <!--titulo de cada pagina-->
+        {% block title %}
+
+        {% endblock %}
+        | David Rodriguez</title>
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+</head>
+<body>
+    <!--Cabecera de la pagina-->
+    <header>
+        <div id="logotipo">
+            <!--logo-->
+            <img src="{%static 'img/logo.png'%}"/>
+            <h1>Proyecto con Django</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="{%url 'index'%}">Inicio</a>
+            </li>
+            {% if user.email %}
+                <li>
+                    <a href="{%url 'list_articles'%}">Categorias</a>
+                    <ul>
+                        {% for category in categories %}
+                        <li>
+                            <a href="{%url 'category' category.0%}">{{category.1}}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% for page in pages%}
+                    <li>
+                        <a href="{%url 'page' page.2%}">{{page.1}}</a>
+                    </li>
+                {% endfor %}
+                <li>
+                    <a href="{%url 'logout'%}">Cerrar sesion</a>
+                </li>
+
+            {% else %}
+                {% comment "registro" %}{% endcomment %}
+                <li>
+                    <a href="{%url 'register'%}">Registro</a>
+                </li>
+                <li>
+                    <a href="{%url 'login'%}">Login</a>
+                </li>
+            {% endif %}
+    </ul>
+    </nav>
+
+    <div class="barra">
+        <span class="esquina-izquierda"></span>
+        <span class="relleno-barra"></span>
+        <span class="esquina-derecha"></span>
+    </div>
+
+    <div id="content">
+        <div class="box">
+        <!--Codigo que viene de templates-->
+        {% block content %}
+        <p>esto es del contenido principal</p>
+        {% endblock %}
+        </div>
+    </div>
+
+    <footer>
+        Master en python con David Rodriguez - {% now "Y-m-d" %}
+    </footer>
+</body>
+</html>
