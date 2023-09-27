@@ -1,0 +1,82 @@
+Los comandos con -- siginifcan que vienen con palabras completas
+Los comandos con - son abreviaturas
+
+comando para abrir todos los comandos:
+-git --help 
+
+comandos para configurar el espacio del desarrollador:
+-git config --global user.name "nombre"
+-git config --global user.email "@email"
+-git config --global -e (para confirmar los datos)
+
+-git init (inicializa un repositorio creando un archivo .git en la carpeta)
+
+-git status(informacion sobre commit, rama master)
+-git status --short (para ver archivos modificados)
+
+-git add (añade archivos)
+-git add all(añade todo)
+-git add . (toma archivos que no se han añadido)
+
+-git commit -m "mensaje" (toma la fotografia)
+
+-git log (para ver detalles de commits)
+-git config --global alias.lg "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all" (alias para ver info organizada)
+
+-git checkout -- . (sirve para restaurar proyecto en el ultimo commit)
+
+-git branch (nos dice en que rama estamos trabajando)
+-git branch -m master main (cambiar el nombre de la rama a main)
+
+-git config --global alias.tecla "status --short" (para añadir atajos de comandos)
+
+-git --amend -m (corregir mensaje)
+
+-git reset --soft HEAD^ (apunta al ultimo commit)
+-git reset --soft HEAD^2 (restaura a 2 commits anteriores)
+-git reset --mixed (quita los datos en el commit y los deja en el editor)
+
+-git reflog (muestra los cambios y eliminaciones, e historial de todo lo que se ha hecho)
+
+-git reset --HARD #hash (restaura a la version indicada)
+
+-git mv (sirve para renombrar)
+-git rm (para eliminar, para guardar toca hacer commit)
+
+-git branch nombre-rama (crea una rama)
+-git branch -a (muestra todas las ramas)
+-git checkout nombre-rama (cambiar ubicacion rama)
+-git checkout v0.0.0 (cambiar a tag)
+-git branch -d nombre-rama (borrar rama)
+-git remote prune origin (para eliminar ramas luego de haberlas unido con merge)
+-git merge nombre-rama (para unir rama)
+-git tag -a nombre-tag (agrega un tag)
+
+versiones:
+V 0.0.0 
+1. significa que hay cambios que rompen todo lo anterior
+2. significa que se añaden funcionalidades
+3. correcciones de bugs
+
+STASH ----registros en bovedas----
+se usa para guardar todos los cambios temporales
+
+-git stash (manda ultimos cambios al stash)
+-git stash list
+-git stash pop (trae los elementos del ultimo stash)
+-git stash clear (limpia los stash)
+-git stash apply nombre-hash (reestablece el stash)
+
+-git remote add origin https:url (para agregar un repositorio local en url)
+-git remote -v (para ver historial de repositorio)
+-git push -u origin master (se hace la primera vez que mandamos al repositorio en url)
+-git push (envia cambios al repositorio)
+-git pull (trae cambios hechos en el repositorio)
+-git clone (para clonar el repositorio)
+
+https://blog.mergify.com/understanding-the-github-pull-request-workflow/
+
+markdown tutorials: https://www.markdowntutorial.com/
+
+se pueden hacer github pages creando un repositorio .github.io para subir HTML y CSS
+
